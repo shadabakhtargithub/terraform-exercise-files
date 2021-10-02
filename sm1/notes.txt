@@ -1,0 +1,41 @@
+# Prerequites
+  # Need terraform.exe
+  # Need Set environment variable for terraform.exe
+  # Verify terraform
+    terraform --version
+
+  # Need AWS Account
+  # Need AWSAccessKeyId and secret_key
+  # Need AWS provider terraform script
+  # Need AWS region name
+
+
+    provider "aws" {
+    access_key = "DFNIAERUNJRIHNFOJXFK"
+    secret_key = "J6nd8dODNWYDNJMkfXINEYNyBBJDNFbwbqa+FFFjg"
+    region = "us-east-1"
+    }
+
+    # After configure Provider run command : terraform init
+
+  # Create AWS Ec2 Instance via terraform script
+    resource "aws_instance" "web" {
+    ami = "ami-0a23ccb2cdd9286bb"
+    instance_type = "t2.micro"
+
+    tags = {
+    Name = "HelloWorld"
+    }
+    }
+
+    # After prepare scripts for ec2 instance run command: 
+    D:\module1> terraform validate
+    Success! The configuration is valid.
+
+    # If Validation is success then run command: 
+       D:\module1> terraform plan
+
+    # Run terraform apply command to create ec2 instance
+    D:\module1> terraform apply
+
+
