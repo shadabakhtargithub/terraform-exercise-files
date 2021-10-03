@@ -38,4 +38,7 @@
     # Run terraform apply command to create ec2 instance
     D:\module1> terraform apply
 
+    # Delete AWS resources via Terraform scripts
+    D:\module1> terraform detroy
+
 
