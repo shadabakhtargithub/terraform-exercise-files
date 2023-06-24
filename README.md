@@ -1,4 +1,4 @@
-# About Shadab
+# About Shadab Akhtar
 Shadab Akhtar is DevOps Consultant, Linux Expert, and Corporate Problem Solver with 10 years and 7 months experiences
 
 Shadab Akhtar designs solutions, deploys the technology, and provides expertise on business system performance, architecture, and security
