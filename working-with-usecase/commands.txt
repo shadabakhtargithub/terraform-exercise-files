@@ -1,0 +1,27 @@
+terraform init
+
+terraform validate
+
+terraform plan -out state.tfplan
+
+terraform apply state.tfplan
+
+# Make note of the s3 bucket name and dynamodb table name
+
+aws --version
+aws-cli/1.25.73 Python/3.8.10 Windows/10 botocore/1.27.72
+
+AWS CLI Commands:
+-------------------------------
+List S3 Bucket:
+-----------------------
+aws s3 ls
+
+List Dynamodb Tables:
+--------------------------------
+aws dynamodb list-tables
+
+
+List IAM Groups:
+------------------------
+aws iam list-groups

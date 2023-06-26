@@ -1,0 +1,3 @@
+full_access_users = ["Elias"]
+
+read_only_users = ["Benfingle"]
